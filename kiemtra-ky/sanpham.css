@@ -1,0 +1,226 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+.menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  top: 0;
+  left: 0;
+  background-color: rgb(31, 238, 238);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.menu li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+.menu li:hover {
+  background-color: rgb(11, 216, 216);
+  border-radius: 7px;
+}
+.luachon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: rgb(31, 238, 238);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.luachon li {
+  list-style-type: none;
+  display: inline-block;
+}
+.luachon a {
+  text-decoration: none;
+  padding: 10px;
+}
+.luachon a:hover {
+  background-color: aqua;
+  border-radius: 7px;
+}
+/* Menu */
+.menu--bottom {
+  background: #d3dddd;
+  padding: 10px 0;
+}
+
+.menu--choose {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu--choose .item a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: color 0.3s ease;
+}
+
+.menu--choose .item a:hover {
+  color: #8b4513;
+}
+
+/* Title */
+.phone--title {
+  text-align: center;
+  color: #0c3b2e;
+  font-size: 26px;
+  margin: 30px 0 20px;
+}
+
+/* Container */
+.phone--container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Card */
+.phone--card {
+  text-decoration: none;
+  width: calc(25% - 20px);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.phone--card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.phone--card .img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.phone--card .img img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Description Text */
+.phone--produce__text h2 {
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 8px;
+  min-height: 40px;
+}
+
+.Memory {
+  margin-bottom: 8px;
+}
+
+.Memory span {
+  font-size: 12px;
+  background: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+/* Stars */
+.stars {
+  font-size: 13px;
+  color: gold;
+  margin-bottom: 6px;
+}
+
+/* Price */
+.phone--produce__text p {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Button */
+.btn--phone {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.btn--phone .btn {
+  background: #0c3b2e;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 5px;
+}
+
+/* Remove unnecessary a tag override */
+a {
+  text-decoration: none;
+}
+/* Nút "Mua" trong card sản phẩm */
+.phone--produce__text {
+  text-align: center; /* Căn giữa nội dung bên trong */
+}
+
+.phone--produce__text .btn {
+  background-color: #007bff; /* Màu xanh dương */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.phone--produce__text .btn:hover {
+  background-color: #0056b3; /* Màu xanh dương đậm khi hover */
+  transform: translateY(-3px); /* Hiệu ứng nổi lên */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .phone--card {
+    width: 100%;
+  }
+
+  .phone--produce__text h2 {
+    font-size: 14px;
+  }
+
+  .btn--phone .btn,
+  .phone--produce__text .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .menu--choose .item a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="produs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="trangchu.css" />
+    
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="./trangchu.html"><i class="fa-solid fa-house"></i>Trang Chủ</a>
+          </li>
+          <li><a href="./gioithieu.html">Giới Thiệu</a></li>
+          <li><a href="./tintuc.html">Tin Tức</a></li>
+          <li><a href="./sanpham.html">Sản Phẩm</a></li>
+          <li><a href="./dangky.html">Đăng Ký</a></li>
+          <li><a href="./dangnhap.html">Đăng nhập </a></li>
+          <li>
+            <a href="/giohang.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+        <div class="nen">SHOP ĐIỆN THOẠI GIÁ RẺ</div>
+      </header>
+
+    <div class="product-detail">
+      <!-- Hình ảnh sản phẩm -->
+      <div class="product-image">
+        <img src="./img/SS S25 Ultra.webp" alt="Samsung Galaxy S25 Ultra" />
+      </div>
+
+      <!-- Thông tin sản phẩm -->
+      <div class="product-info">
+        <h1>Samsung Galaxy S25 Ultra 12GB 256GB</h1>
+        <div class="brand">Thương hiệu : <span>...</span></div>
+        <div class="price">xx.000.000₫</div>
+
+        <label for="storage">Dung Lượng :</label>
+        <p id="storage">256GB</p>
+
+        <label for="color">Màu sắc :</label>
+        <p id="color">Xanh</p>
+
+        <!-- Nút bật modal -->
+        <label for="specs-toggle" class="btn detail"
+          >Xem Cấu Hình chi Tiết</label
+        >
+      </div>
+    </div>
+
+    <!-- Checkbox ẩn dùng để điều khiển modal -->
+    <input type="checkbox" id="specs-toggle" hidden />
+
+    <!-- Modal cấu hình -->
+    <div class="modal">
+      <div class="modal-content">
+        <!-- Nút đóng modal -->
+        <label for="specs-toggle" class="close">&times;</label>
+
+        <h3>Cấu hình chi tiết</h3>
+        <ul>
+          <li><strong>Kích thước màn hình:</strong> 6.9 inches</li>
+          <li><strong>Công nghệ màn hình:</strong> Dynamic AMOLED 2X</li>
+          <li>
+            <strong>Độ phân giải màn hình:</strong> 3120 x 1440 pixels (Quad
+            HD+)
+          </li>
+          <li>
+            <strong>Tính năng màn hình:</strong> 120Hz, 2600 nits, Corning®
+            Gorilla® Armor 2
+          </li>
+          <li><strong>Tần số quét:</strong> 120Hz</li>
+          <li>
+            <strong>Camera sau:</strong>
+            <ul>
+              <li>Camera siêu rộng 50MP</li>
+              <li>Camera góc rộng 200 MP</li>
+              <li>Camera Tele (5x) 50MP</li>
+              <li>Camera Tele (3x) 10MP</li>
+            </ul>
+          </li>
+          <li>
+            <strong>Tính năng camera:</strong>
+            <ul>
+              <li>Chế độ quay phim 10-bit HDR</li>
+              <li>Quay Log Video</li>
+              <li>Zoom quang học 100x</li>
+              <li>Chụp hình Super HDR</li>
+              <li>Chân dung</li>
+              <li>Tự động lấy nét</li>
+              <li>Quay Video đêm</li>
+            </ul>
+          </li>
+          <li><strong>Camera trước:</strong> 12 MP</li>
+        </ul>
+      </div>
+    </div>
+
+      <footer>
+    <div class="foolter">
+      <div>
+        <p>ZALO: 0388469093</p>
+        <p>Fanpage:</p>
+        <p>Địa chỉ: 371 Nguyễn Kiệm,Gò Vấp,TP HCM</p>
+        <p>Thời gian hoạt động: 8h - 20h, thứ 2 - thứ 6</p>
+      </div>
+      <div style="padding-left: 30px; margin: 10px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.4961401538103!2d106.67684597151671!3d10.815180821177771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed8e1ebc351%3A0xcde980107fdab6de!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBHaWEgxJDhu4tuaA!5e0!3m2!1svi!2s!4v1744649402391!5m2!1svi!2s" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

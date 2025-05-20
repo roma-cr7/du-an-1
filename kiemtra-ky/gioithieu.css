@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+/*Nội dung chính*/
+.introduce-container {
+  display: block;
+  background-color: white;
+  width: 90%;
+  margin: 40px;
+  padding: 30px;
+  line-height: 1.6;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.introduce-container h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+
+.introduce-container h3 {
+  font-weight: bold;
+}
+
+/*bảng đánh giá*/
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f4f4f4;
+  flex-wrap: wrap;
+}
+
+/*Tiêu đề*/
+.review-title {
+  text-align: center;
+}
+
+.review-title h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* thẻ đánh giá */
+.review-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  display: flex;
+  max-width: 500px;
+  padding: 20px;
+  margin-bottom: 20px;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.review-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.review-content h3 {
+  margin: 0;
+  color: #005f4f;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .menu li {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .luachon {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .luachon li {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+  }
+
+  .introduce-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .introduce-container h1 {
+    font-size: 24px;
+  }
+
+  .review-title h1 {
+    font-size: 22px;
+  }
+
+  .review-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .review-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .review-content h3 {
+    font-size: 16px;
+  }
+}

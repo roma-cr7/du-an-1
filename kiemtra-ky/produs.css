@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f3f3f3;
+}
+
+.product-detail {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.product-image img {
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+.product-info h1 {
+  font-size: 22px;
+}
+
+.brand {
+  color: gray;
+}
+
+.price {
+  font-size: 22px;
+  color: red;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+label {
+  margin-top: 10px;
+}
+
+select {
+  width: 200px;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.detail {
+  background-color: #004d40;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.detail:hover {
+  color: red;
+  transform: translateY(-2px);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#specs-toggle:checked + .modal {
+  display: block;
+}
+
+.modal-content {
+  background: white;
+  width: 80%;
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .product-detail {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .product-info h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .price {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 30% auto;
+    padding: 15px;
+  }
+
+  .detail {
+    width: 100%;
+    text-align: center;
+  }
+}

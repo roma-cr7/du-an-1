@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+  
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 5px;
+}
+  
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+  
+.remember {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+  
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+  
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+  
+.btn-primary {
+    padding: 12px 30px;
+    background: rgb(31, 238, 238);
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+  
+.btn-outline {
+    padding: 12px 30px;
+    background: white;
+    color: rgb(1, 164, 164);
+    border: 2px solid rgb(0, 141, 141);
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.forgot {
+    text-align: right;
+    margin-top: 10px;
+}
+  
+.forgot a {
+    color: rgb(1, 164, 164);
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.forgot a:hover {
+    text-decoration: underline;
+}
+  
+/* 
+Responsive */
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .remember {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .remember label {
+        font-size: 13px;
+    }
+
+    .forgot {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
